@@ -46,4 +46,15 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
-    print("terminamos")
+fig = plt.figure()
+fig.suptitle('Multiples gráficos en misma Figura', fontsize=21)
+ax = fig.add_subplot()
+
+ax.plot(x, y1, color = 'r', label='y = x**2')
+ax.plot(x, y2, color = 'g', label='y = x**3')
+ax.legend()
+ax.grid()
+plt.show()
+
+
+print("terminamos")

@@ -53,5 +53,36 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+fig = plt.figure()
+ax1 = fig.add_subplot(2, 2, 1)
+ax2 = fig.add_subplot(2, 2, 2)
+ax3 = fig.add_subplot(2, 2, 3)
+ax4 = fig.add_subplot(2, 2, 4)
 
-    print("terminamos")
+ax1.plot(x, y1, color='r', label='y=x**2')
+ax1.set_title('Gráfico Al Cuadrado')
+ax1.set_facecolor('whitesmoke')
+ax1.grid(ls='dashed')
+ax1.legend()
+
+ax2.plot(x, y2, color='g', label='y=x**3')
+ax2.set_title('Gráfico Al Cubo')
+ax2.set_facecolor('tab:blue')
+ax2.grid(ls='dashed')
+ax2.legend()
+
+ax3.plot(x, y3, color='b', label='y=x**4')
+ax3.set_title('Gráfico a la Cuarta')
+ax3.set_facecolor('darkorange')
+ax3.grid(ls='dashed')
+ax3.legend()
+
+ax4.plot(x, y4, color='c', label='y=np.sqrt(x)')
+ax4.set_title('Gráfico Raiz Cuadrada')
+ax4.set_facecolor('lime')
+ax4.grid(ls='dashed')
+ax4.legend()
+
+plt.show()
+
+print("terminamos")

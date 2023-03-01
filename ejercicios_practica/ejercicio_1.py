@@ -34,5 +34,13 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+fig = plt.figure()
+fig.suptitle('Gráfico Lineal X-Y', fontsize=21)
+ax = fig.add_subplot()
+ax.plot(x, y, c='r', label='Y = x**2')
+ax.legend()
+plt.show()
 
-    print("terminamos")
+
+
+print("terminamos")
